@@ -1,0 +1,2 @@
+{double (* (arg 0) 2)}
+(double 3) # 6

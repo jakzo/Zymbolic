@@ -1,0 +1,1 @@
+(+ (arg 0) 2) # first arg + 2

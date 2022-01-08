@@ -1,0 +1,38 @@
+{
+  "name": "@jakzo/lizp",
+  "version": "0.0.1",
+  "description": "Toy functional language for testing the Zymbolic compiler.",
+  "keywords": [],
+  "homepage": "https://github.com/jakzo/zymbolic#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jakzo/zymbolic.git",
+    "directory": "packages/lizp"
+  },
+  "bugs": {
+    "url": "https://github.com/jakzo/zymbolic/issues"
+  },
+  "author": "jakzo",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only --watch ./examples/example.fz ./examples/parse.ts"
+  },
+  "dependencies": {
+    "tslib": "^2.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "16.9.1",
+    "ts-node": "^10.4.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.4"
+  }
+}

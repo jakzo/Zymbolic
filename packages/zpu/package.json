@@ -1,0 +1,37 @@
+{
+  "name": "@jakzo/zpu",
+  "version": "0.0.1",
+  "description": "Toy CPU architecture for testing the Zymbolic compiler.",
+  "keywords": [],
+  "homepage": "https://github.com/jakzo/zymbolic#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jakzo/zymbolic.git",
+    "directory": "packages/zpu"
+  },
+  "bugs": {
+    "url": "https://github.com/jakzo/zymbolic/issues"
+  },
+  "author": "jakzo",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build:grammar": "nearleyc ./src/grammar.ne -o ./dist/grammar.js"
+  },
+  "devDependencies": {
+    "@types/nearley": "^2",
+    "@types/node": "16.9.1"
+  },
+  "dependencies": {
+    "nearley": "^2.20.1",
+    "tslib": "^2.3.1"
+  }
+}
